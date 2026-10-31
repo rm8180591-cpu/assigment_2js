@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>What's For Dinner</title>
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="container header-section  py-2">
+        <div class="d-flex align-items-center gap-3">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-utensils"></i>
+            </div>
+
+            <div>
+                <h1 class="site-title">What's For Dinner</h1>
+                <p class="site-subtitle mb-0">
+                    Your daily meal inspiration
+                </p>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- Recipe Section -->
+    <main class="container  py-5 " id="recipe" >
+
+        <div class="recipe-card">
+            <div class="row g-0">
+
+                <!-- Left Column: Image -->
+                <div class="col-12 col-lg-5">
+
+                    <div class="recipe-image-side">
+
+                        <img
+                            id="recipeImage"
+                            src="./imgs/Creamy Spaghetti Carbonara.jpg"
+                            alt=""
+                            class="recipe-image">
+
+                        <!-- Rating -->
+                        <div class="rating-badge">
+                            <i class="fa-solid fa-star"></i>
+                            <span id="recipeRating">4.8</span>
+                            <span class="review-count">
+                                <span id="reviewCount">234</span> reviews
+                            </span>
+                        </div>
+
+                        <!-- Image Information -->
+                        <div class="image-info">
+
+                            <div class="row text-center g-2">
+
+                                <div class="col-4">
+                                    <i class="fa-regular fa-clock info-icon prep-icon"></i>
+                                    <p class="info-label">Prep Time</p>
+                                    <p class="info-value" id="prepTime">
+                                        15 min
+                                    </p>
+                                </div>
+
+                                <div class="col-4">
+                                    <i class="fa-solid fa-fire-burner info-icon cook-icon"></i>
+                                    <p class="info-label">Cook Time</p>
+                                    <p class="info-value" id="cookTime">
+                                        20 min
+                                    </p>
+                                </div>
+
+                                <div class="col-4">
+                                    <i class="fa-solid fa-users info-icon servings-icon"></i>
+                                    <p class="info-label">Servings</p>
+                                    <p class="info-value" id="servings">
+                                        4 people
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Right Column: Recipe Details -->
+                <div class="col-12 col-lg-7">
+
+                    <div class="recipe-details">
+
+                        <!-- Difficulty and Category -->
+                        <div class="recipe-tags d-flex gap-4">
+                            <span class="difficulty-tag lable_tag" id="difficulty">
+                                Easy
+                            </span>
+                            <span class="category-tag lable_tag" id="category">
+                                Italian
+                            </span>
+                        </div>
+
+
+                        <!-- Recipe Title -->
+                        <div class="d-flex justify-content-between align-items-start gap-3 title-row">
+
+                            <div>
+                                <h2 class="recipe-title" id="recipeTitle">
+                                    Creamy Spaghetti Carbonara
+                                </h2>
+
+                                <p class="recipe-description" id="recipeDescription">
+                                    A classic Italian pasta dish with eggs,
+                                    cheese, and pancetta
+                                </p>
+                            </div>
+
+                         
+                        </div>
+
+
+                        <!-- Bootstrap Nav Tabs -->
+             <ul class="nav nav-pills mb-3 justify-content-center fw-semibold " id="pills-tab" role="tablist">
+  <li class="nav-item " role="presentation">
+    <button class="nav-link active" id="pills-ingredient-tab" data-bs-toggle="pill" data-bs-target="#pills-ingredient" type="button" role="tab" aria-controls="pills-ingredient" aria-selected="true">
+      <i class="fa-solid fa-code"></i> ingredient</button>
+  </li>
+
+
+
+
+
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-backend-tab" data-bs-toggle="pill" data-bs-target="#pills-backend" type="button" role="tab" aria-controls="pills-backend" aria-selected="false">
+      <i class="fa-solid fa-server"></i>
+      Backend</button>
+  </li>
+
+
+
+
+
+
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-mobile-tab" data-bs-toggle="pill" data-bs-target="#pills-mobile" type="button" role="tab" aria-controls="pills-mobile" aria-selected="false">
+      <i class="fa-solid fa-mobile"></i>
+      Mobile</button>
+  </li>
+
+
+
+
+    <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-cloud-tab" data-bs-toggle="pill" data-bs-target="#pills-cloud" type="button" role="tab" aria-controls="pills-cloud" aria-selected="false">
+      <i class="fa-solid fa-cloud"></i>
+      Cloud & DevOps</button>
+  </li>
+
+
+
+
+
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-ingredient" role="tabpanel" aria-labelledby="pills-ingredient-tab" tabindex="0">
+
+
+
+
+
+<div class="container">
+    <ul class="ul_font">
+       <div class="d-flex column-gap-2 mb-2">
+         <span class="list">1</span>
+        <li id="ing1">2 salmon fillets (6oz each)</li>
+       </div>
+
+       <div class="d-flex column-gap-2 mb-2">
+         <span class="list">2</span>
+          <li id="ing2">3 tablespoons honey</li>
+       </div>
+
+       <div class="d-flex column-gap-2 mb-2">
+         <span class="list">3</span>
+          <li id="ing3">2 tablespoons soy sauce</li>
+       </div>
+
+       <div class="d-flex column-gap-2 mb-2">
+         <span class="list">4</span>
+         <li id="ing4">4 cloves garlic, minced</li>
+       </div>
+       
+       <div class="d-flex column-gap-2 mb-2">
+         <span class="list">5</span>
+        <li id="ing5">1 tablespoon olive oil</li>
+       </div>
+      
+       <div class="d-flex column-gap-2 mb-2">
+         <span class="list">6</span>
+        <li id="ing6">1 teaspoon fresh ginger, grated</li>
+       </div>
+      
+       <div class="d-flex column-gap-2 mb-2">
+         <span class="list">7</span>
+         <li id="ing7">Sesame seeds for garnish</li>
+       </div>
+
+       <div class="d-flex column-gap-2 mb-2">
+         <span class="list">8</span>
+           <li id="ing8">Green onions, sliced</li>
+       </div>
+      
+       
+        
+      
+    </ul>
+</div>
+
+
+
+
+  </div>
+
+
+  <div class="tab-pane fade" id="pills-backend" role="tabpanel" aria-labelledby="pills-backend-tab" tabindex="0">
+
+
+<div class="instructions-content">
+    <ul class="instructions-list list-unstyled mb-0">
+
+        <li class="instruction-item d-flex align-items-center gap-3">
+            <span class="step-number">1</span>
+            <p id="inst1">Slice ciabatta bread in half horizontally.</p>
+        </li>
+
+        <li class="instruction-item d-flex align-items-center gap-3">
+            <span class="step-number">2</span>
+            <p  id="inst2">Toast bread lightly until just crispy.</p>
+        </li>
+
+        <li class="instruction-item d-flex align-items-center gap-3">
+            <span class="step-number">3</span>
+            <p  id="inst3">Spread pesto on both sides of bread.</p>
+        </li>
+
+        <li class="instruction-item d-flex align-items-center gap-3">
+            <span class="step-number">4</span>
+            <p  id="inst4">Layer mozzarella slices, tomato slices, and fresh basil leaves.</p>
+        </li>
+
+        <li class="instruction-item d-flex align-items-center gap-3">
+            <span class="step-number">5</span>
+            <p  id="inst5">Drizzle with olive oil and balsamic glaze. Season with salt and pepper.</p>
+        </li>
+
+    </ul>
+</div>
+
+  </div>
+
+
+  <div class="tab-pane fade" id="pills-mobile" role="tabpanel" aria-labelledby="pills-mobile-tab" tabindex="0">
+
+
+<div class="nutrition-content">
+    <div class="row g-4">
+
+        <div class="col-12 col-md-6">
+            <div class="nutrition-item d-flex align-items-center gap-3">
+                <div class="nutrition-icon calories">
+                    <i class="fa-solid fa-fire-flame-curved"></i>
+                </div>
+                <span>Calories</span>
+                <strong id="cal">480 kcal</strong>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <div class="nutrition-item d-flex align-items-center gap-3">
+                <div class="nutrition-icon protein">
+                    <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <span>Protein</span>
+                <strong id="protein">22g</strong>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <div class="nutrition-item d-flex align-items-center gap-3">
+                <div class="nutrition-icon carbs">
+                    <i class="fa-solid fa-wheat-awn"></i>
+                </div>
+                <span>Carbohydrates</span>
+                <strong id="Carbohydrates">48g</strong>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <div class="nutrition-item d-flex align-items-center gap-3">
+                <div class="nutrition-icon fat">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+                <span>Fat</span>
+                <strong id="fat">22g</strong>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <div class="nutrition-item d-flex align-items-center gap-3">
+                <div class="nutrition-icon fiber">
+                    <i class="fa-solid fa-seedling"></i>
+                </div>
+                <span>Fiber</span>
+                <strong id="fiber">3g</strong>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <div class="nutrition-item d-flex align-items-center gap-3">
+                <div class="nutrition-icon sodium">
+                    <i class="fa-solid fa-cube"></i>
+                </div>
+                <span>Sodium</span>
+                <strong id="sodium">680mg</strong>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+  </div>
+
+
+
+   <div class="tab-pane fade" id="pills-cloud" role="tabpanel" aria-labelledby="pills-cloud-tab" tabindex="0">
+
+  
+<div class="tips-content">
+    <ul class="tips-list list-unstyled mb-0">
+
+        <li class="tip-item d-flex align-items-center gap-3">
+            <i class="fa-solid fa-circle-check tip-icon"></i>
+            <p id="tip1">Use ripe, in-season tomatoes for best flavor</p>
+        </li>
+
+        <li class="tip-item d-flex align-items-center gap-3">
+            <i class="fa-solid fa-circle-check tip-icon"></i>
+            <p id="tip2">Buffalo mozzarella is traditional but harder to slice</p>
+        </li>
+
+        <li class="tip-item d-flex align-items-center gap-3">
+            <i class="fa-solid fa-circle-check tip-icon"></i>
+            <p id="tip3">Toast bread lightly - not too crispy</p>
+        </li>
+
+        <li class="tip-item d-flex align-items-center gap-3">
+            <i class="fa-solid fa-circle-check tip-icon"></i>
+            <p id="tip4">Add prosciutto or salami for a heartier sandwich</p>
+        </li>
+
+    </ul>
+</div>
+
+
+
+   </div>
+
+
+
+
+
+
+
+                        <!-- Another Recipe Button -->
+                        <button
+                            type="button"
+                            class="btn another-recipe-btn"
+                            id="anotherRecipeBtn" onclick=" displayQuote()">
+
+                            <i class="fa-solid fa-rotate me-2"></i>
+                            Try Another Recipe
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+
+  
+
+
+
+
+   
+     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/file.js"></script>
+
+</body>
+</html>
